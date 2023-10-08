@@ -1,0 +1,682 @@
+<!-- Hayo Ngapain?:v -->
+<!-- Credit Template By Farhan -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Rest Api - Zexxabot</title>
+    <link rel="stylesheet" href="vendors/mdi/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="vendors/css/vendor.bundle.base.css">
+    <link rel="stylesheet" href="vendors/flag-icon-css/css/flag-icon.min.css">
+    <link rel="stylesheet" href="vendors/owl-carousel-2/owl.carousel.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="vendors/owl-carousel-2/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7Wk6KnE7aJHUHjpp_wBoDfkeSIOQfSGMmxg&usqp=CAU"><link rel="stylesheet" href="ajax/libs/limonte-sweetalert2/7.33.1/sweetalert2.min.css">
+    <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7Wk6KnE7aJHUHjpp_wBoDfkeSIOQfSGMmxg&usqp=CAU"><link rel="stylesheet" href="ajax/libs/limonte-sweetalert2/7.33.1/sweetalert2.min.css">
+    <script src="ajax/libs/limonte-sweetalert2/7.33.1/sweetalert2.min.js"></script>
+   <meta name="description" content="Zexxabot - API">
+   <meta property="og:image" content="https://w0.peakpx.com/wallpaper/581/70/HD-wallpaper-light-yagami-shinigami-death-note-kira.jpg">
+   <meta property="og:site_name" content="EKA PI">
+   <meta name="keywords" content="REST API">
+   <meta name="author" content="Alpha Gans">
+  </head>
+  <body>
+  <body id="page-top" onload="getvisitor();">
+    <div class="container-scroller">
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
+          <a class="sidebar-brand brand-logo rounded-circle" href="#"><img src="https://w0.peakpx.com/wallpaper/948/292/HD-wallpaper-kira-black-death-note-evil-light-oled-shinigami-yagami.jpg" alt="logo" /></a>
+          <a class="sidebar-brand brand-logo-mini" href="#"><img src="https://w0.peakpx.com/wallpaper/948/292/HD-wallpaper-kira-black-death-note-evil-light-oled-shinigami-yagami.jpg" class="rounded-circle" alt="logo" /></a>
+        </div>
+       <font face="Original Surfer">
+        <ul class="nav">
+          <li class="nav-item profile">
+            <div class="profile-desc">
+              <div class="profile-pic">
+                <div class="count-indicator">
+                  <img class="img-xs rounded-circle " src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFrABSl2hMCOXPQYdiQVvywj3Z8fSmcqV12A&usqp=CAU" alt="">
+                  <span class="count bg-success"></span>
+                </div>
+                <div class="profile-name">
+                  <h5 class="mb-0 font-weight-normal">Zexxa Dev</h5>
+                  <span>Puh sepuhhh ajarin dong puhhh</span>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item nav-category">
+            <span class="nav-link">Docs</span>
+          </li>
+          <li class="nav-item menu-items">
+          <a class="nav-link" href="/">
+          <span class="menu-icon">
+          <i class="mdi mdi-home"></i>
+          </span>
+          <span class="menu-title">Home</span>
+          </a>
+          </li>
+          <li class="nav-item menu-items">
+          <a class="nav-link" data-toggle="collapse" href="#ui-cecan" aria-expanded="false" aria-controls="ui-img-maker">
+          <span class="menu-icon">
+          <i class="mdi mdi-folder-multiple-image"></i>
+          </span>
+          <span class="menu-title">Cecan API</span>
+          <i class="menu-arrow"></i>
+          </a>
+          <div class="collapse" id="ui-cecan">
+          <ul class="nav flex-column sub-menu">
+          <li class="nav-item"> <a class="nav-link" href="api/cecan/china?apikey=Zexxabot" target="_blank">China</a></li>
+          <li class="nav-item"> <a class="nav-link" href="api/cecan/vietnam?apikey=Zexxabot" target="_blank">Vietnam</a></li>
+          <li class="nav-item"> <a class="nav-link" href="api/cecan/thailand?apikey=Zexxabot">Thailand </a></li>
+          <li class="nav-item"> <a class="nav-link" href="api/cecan/indonesia?apikey=Zexxabot" target="_blank">Indonesia</a></li>
+          <li class="nav-item"> <a class="nav-link" href="api/cecan/korea?apikey=Zexxabot" target="_blank">Korea</a></li>
+          <li class="nav-item"> <a class="nav-link" href="api/cecan/japan?apikey=Zexxabot" target="_blank">Japan</a></li>
+          <li class="nav-item"> <a class="nav-link" href="api/cecan/malaysia?apikey=Zexxabot" target="_blank">Malaysia</a></li>
+          </ul>
+          </div>
+          </li> 
+          <li class="nav-item menu-items">
+          <a class="nav-link" data-toggle="collapse" href="#ui-asupan" aria-expanded="false" aria-controls="ui-stalker">
+          <span class="menu-icon">
+          <i class="mdi mdi-chart-bar"></i>
+          </span>
+          <span class="menu-title">Asupan API</span>
+          <i class="menu-arrow"></i>
+          </a>
+          <div class="collapse" id="ui-asupan">
+          <ul class="nav flex-column sub-menu">
+          <li class="nav-item"> <a class="nav-link" href="api/asupan/cecan?apikey=Zexxabot">Cecan</a></li>          
+            <li class="nav-item"> <a class="nav-link" href="api/asupan/cogan?apikey=Zexxabot">Cogan</a></li>
+          <li class="nav-item"> <a class="nav-link" href="api/asupan/hijaber?apikey=Zexxabot">Hijaber</a></li>
+          <li class="nav-item"> <a class="nav-link" href="api/asupan/asupan?apikey=Zexxabot">Asupan </a></li>
+          <li class="nav-item"> <a class="nav-link" href="api/asupan/rikagusriani?apikey=Zexxabot">Rikagusriani</a></li>
+          <li class="nav-item"> <a class="nav-link" href="api/asupan/santuy?apikey=Zexxabot">Santuy</a></li>
+          <li class="nav-item"> <a class="nav-link" href="api/asupan/ukhty?apikey=Zexxabot">Ukhty</a></li>
+          <li class="nav-item"> <a class="nav-link" href="api/asupan/bocil?apikey=Zexxabot">Bocil</a></li>          
+	     <li class="nav-item"> <a class="nav-link" href="api/asupan/gheayubi?apikey=Zexxabot">Gheayubi</a></li>          
+</ul>
+          </div>
+          </li>                    
+          <li class="nav-item menu-items">
+          <a class="nav-link" data-toggle="collapse" href="#ui-downloader" aria-expanded="false" aria-controls="ui-downloader">
+          <span class="menu-icon">
+          <i class="mdi mdi-download"></i>
+          </span>
+          <span class="menu-title">Downloader API</span>
+          <i class="menu-arrow"></i>
+          </a>
+          <div class="collapse" id="ui-downloader">
+          <ul class="nav flex-column sub-menu">
+         <li class="nav-item"> <a class="nav-link"href="api/download/tiktok?url=&apikey=Zexxabot" target="_blank">Tiktok Downloader</a></li>
+         <li class="nav-item"> <a class="nav-link"href="api/download/facebook?url=&apikey=Zexxabot" target="_blank">Facebook Downloader</a></li>
+         <li class="nav-item"> <a class="nav-link"href="api/download/gdrive?url=&apikey=Zexxabot" target="_blank">Google Drive Downloader</a></li>
+         <li class="nav-item"> <a class="nav-link"href="api/download/xnxxdl?url=&apikey=Zexxabot">XNXX Downloader</a></li>
+         <li class="nav-item"> <a class="nav-link"href="api/download/xvideosdl?url=&apikey=Zexxabot" target="_blank">XVIDEOS Downloader</a></li>
+         <li class="nav-item"> <a class="nav-link"href="api/download/sfileDl?url=&apikey=Zexxabot" target="_blank">Sfile.mobi Downloader</a></li>
+         <li class="nav-item"> <a class="nav-link"href="api/download/mediafireDl?url=&apikey=Zexxabot" target="_blank">Mediafire Downloader</a></li>
+         <li class="nav-item"> <a class="nav-link"href="api/download/scdl?url=&apikey=Zexxabot" target="_blank">Soundcloud Downloader</a></li>
+         <li class="nav-item"> <a class="nav-link"href="api/download/igstory?url=&apikey=Zexxabot" target="_blank">IG Story Downloader</a></li>
+         <li class="nav-item"> <a class="nav-link"href="api/download/instagram?url=&apikey=Zexxabot" target="_blank">Instagram Downloader</a></li>
+         <li class="nav-item"> <a class="nav-link"href="api/download/pinterest?q=loli&apikey=Zexxabot" target="_blank">Pinterest Downloader</a></li>
+         <li class="nav-item"> <a class="nav-link"href="api/download/ytmp3?url=&apikey=Zexxabot" target="_blank">YouTube Audio</a></li>
+		<li class="nav-item"> <a class="nav-link"href="api/download/ytsearch?query=cara membuat bot&apikey=Zexxabot" target="_blank">Youtube Search</a></li>
+         <li class="nav-item"> <a class="nav-link"href="api/download/ytmp4?url=&apikey=Zexxabot" target="_blank">YouTube Video</a></li>          
+          </ul>
+          </div>
+          </li>
+          <li class="nav-item menu-items">
+          <a class="nav-link" data-toggle="collapse" href="#ui-ai" aria-expanded="false" aria-controls="ui-ai">
+          <span class="menu-icon">
+          <i class="mdi mdi-robot"></i>
+          </span>
+          <span class="menu-title">AI API</span>
+          <i class="menu-arrow"></i>
+          </a>          
+          <div class="collapse" id="ui-ai">
+          <ul class="nav flex-column sub-menu">         
+          <li class="nav-item"> <a class="nav-link" href="api/ai/gpt?query=introduce your self&apikey=Zexxabot" target="_blank"> ZEXXA AI</a></li>
+          <li class="nav-item"> <a class="nav-link" href="api/ai/openai?text=introduce your self&apikey=Zexxabot" target="_blank"> ChatGPT</a></li>
+          <li class="nav-item"> <a class="nav-link" href="api/ai/bard?text=introduce your self&apikey=Zexxabot" target="_blank"> Bard AI</a></li>
+          <li class="nav-item"> <a class="nav-link" href="api/ai/stablediff?prompt=1girl, black skin&apikey=Zexxabot" target="_blank"> Stable Diffusion</a></li>
+          <li class="nav-item"> <a class="nav-link" href="api/ai/animediff?prompt=1girl, black skin&apikey=Zexxabot" target="_blank"> Anime Diffusion</a></li>
+          </ul>
+          </div>
+          </li>            
+          <li class="nav-item menu-items">
+          <a class="nav-link" data-toggle="collapse" href="#ui-lk" aria-expanded="false" aria-controls="ui-textpro">
+          <span class="menu-icon">
+          <i class="mdi mdi-lock"></i>
+          </span>
+          <span class="menu-title">Lk21 API</span>
+          <i class="menu-arrow"></i>
+          </a>
+          <div class="collapse" id="ui-lk">
+          <ul class="nav flex-column sub-menu">          
+          <li class="nav-item"> <a class="nav-link" href="api/lk21/search?film=spiderman&apikey=Zexxabot" target="_blank"> Lk21 Search</a></li>         
+			</ul>
+          </div>
+          </li>  
+<li class="nav-item menu-items">
+          <a class="nav-link" data-toggle="collapse" href="#ui-news" aria-expanded="false" aria-controls="ui-random">
+          <span class="menu-icon">
+          <i class="mdi mdi-xing"></i>
+          </span>
+          <span class="menu-title">News API</span>
+          <i class="menu-arrow"></i>
+          </a>
+          <div class="collapse" id="ui-news">
+          <ul class="nav flex-column sub-menu">
+         <li class="nav-item"> <a class="nav-link" href="api/news/cnn?type=Berita&apikey=Zexxabot" target="_blank">Cnn News</a></li>
+          <li class="nav-item"> <a class="nav-link" href="api/news/cnbc?type=Berita&apikey=Zexxabot" target="_blank">CnBc News</a></li>
+          <li class="nav-item"> <a class="nav-link" href="api/news/kumparan?type=Berita&apikey=Zexxabot" target="_blank">Kumparan News</a></li>
+          </ul>
+          </div>
+          </li>
+          <li class="nav-item menu-items">
+          <a class="nav-link" data-toggle="collapse" href="#ui-sticker" aria-expanded="false" aria-controls="ui-sticker">
+          <span class="menu-icon">
+          <i class="mdi mdi-sticker"></i>
+          </span>
+          <span class="menu-title">Sticker WA API</span>
+          <i class="menu-arrow"></i>
+          </a>
+          <div class="collapse" id="ui-sticker">
+          <ul class="nav flex-column sub-menu">
+         <li class="nav-item"> <a class="nav-link"href="api/sticker/patrick?url=&apikey=Zexxabot">Patrick</a></li>
+         <li class="nav-item"> <a class="nav-link"href="api/sticker/dinokuning?url=&apikey=Zexxabot">Dinokuning</a></li>
+         <li class="nav-item"> <a class="nav-link"href="api/sticker/amongus?url=&apikey=Zexxabot">Amongus</a></li>
+            <li class="nav-item"> <a class="nav-link"href="api/sticker/spongebob?&apikey=Zexxabot">Spongebob</a></li>
+         <li class="nav-item"> <a class="nav-link"href="api/sticker/animegif?&apikey=Zexxabot">Anime GIF</a></li>
+         <li class="nav-item"> <a class="nav-link"href="api/sticker/animestick?&apikey=Zexxabot">Anime</a></li>
+         <li class="nav-item"> <a class="nav-link"href="api/sticker/dadu?&apikey=Zexxabot">Dadu</a></li>
+         <li class="nav-item"> <a class="nav-link"href="api/sticker/doge?&apikey=Zexxabot">Doge</a></li>
+         <li class="nav-item"> <a class="nav-link"href="api/sticker/kawanspongebob?&apikey=Zexxabot">Kawan Spongebob</a></li>
+         <li class="nav-item"> <a class="nav-link"href="api/sticker/manusialidi?&apikey=Zexxabot">Manusia Lidi</a></li>
+         <li class="nav-item"> <a class="nav-link"href="api/sticker/mukalu?&apikey=Zexxabot">Mukalu</a></li>
+         <li class="nav-item"> <a class="nav-link"href="api/sticker/paimon?&apikey=Zexxabot">Paimon</a></li>
+         <li class="nav-item"> <a class="nav-link"href="api/sticker/rabbit?&apikey=Zexxabot">Rabit</a></li>
+         <li class="nav-item"> <a class="nav-link"href="api/sticker/random?&apikey=Zexxabot">Random</a></li>
+         <li class="nav-item"> <a class="nav-link"href="api/sticker/patrickgif?&apikey=Zexxabot">Patrick GIF</a></li>
+          </ul>
+          </div>
+          </li>
+          <li class="nav-item menu-items">
+          <a class="nav-link" data-toggle="collapse" href="#ui-photooxy" aria-expanded="false" aria-controls="ui-photooxy">
+          <span class="menu-icon">
+          <i class="mdi mdi-folder-image"></i>
+          </span>
+          <span class="menu-title">Photooxy API</span>
+          <i class="menu-arrow"></i>
+          </a>
+          <div class="collapse" id="ui-photooxy">
+          <ul class="nav flex-column sub-menu">
+         
+         <li class="nav-item"> <a class="nav-link" href="api/photooxy/grafity_text?text=zeeone&apikey=Zexxabot" target="_blank">Grafity Text</a>
+         <li class="nav-item"> <a class="nav-link" href="api/photooxy/naruto?text=zeeone&apikey=Zexxabot" target="_blank">Naruto </a>
+         <li class="nav-item"> <a class="nav-link" href="api/photooxy/petterns?apikey=Zexxabot&text=zeeone" target="_blank">Petterns</a>
+         <li class="nav-item"> <a class="nav-link" href="api/photooxy/text_on_cup?text=Zexxabot&apikey=Zexxabot">Text On Cup</a>
+         <li class="nav-item"> <a class="nav-link" href="api/photooxy/3d_summer?text=zeeone&apikey=Zexxabot">3d Summer</a>
+         <li class="nav-item"> <a class="nav-link" href="api/photooxy/3d_nature?text=zeeone&apikey=Zexxabot">3d Nature</a>
+         <li class="nav-item"> <a class="nav-link" href="api/photooxy/wolf_metal?text=zeeone&apikey=Zexxabot">Wolf Metal</a>
+         <li class="nav-item"> <a class="nav-link" href="api/photooxy/wood_heart?text=zeeone&apikey=Zexxabot">Wood Heart</a>
+         <li class="nav-item"> <a class="nav-link" href="api/photooxy/flower_heart?text=zeeone&apikey=Zexxabot">Flower Heart</a>
+         <li class="nav-item"> <a class="nav-link" href="api/photooxy/wooden_board?text=alpha&apikey=Zexxabot">Wooden Board</a>
+         <li class="nav-item"> <a class="nav-link" href="api/photooxy/tiktok_effect?text=zeeone&text2=ofc&apikey=Zexxabot">Tiktok</a>
+         <li class="nav-item"> <a class="nav-link" href="api/photooxy/double_heart?text=zeeone&apikey=Zexxabot">Double Heart</a>
+         <li class="nav-item"> <a class="nav-link" href="api/photooxy/coffee_cup?text=alpha&apikey=Zexxabot">Coffe Cup</a>
+         <li class="nav-item"> <a class="nav-link" href="api/photooxy/under_grass?text=zeeone&apikey=Zexxabot">Under Grass</a>
+         <li class="nav-item"> <a class="nav-link" href="api/photooxy/text_on_cup2?text=zeeone&apikey=Zexxabot">Text On Cup 2</a>
+         <li class="nav-item"> <a class="nav-link" href="api/photooxy/romantic_text?text=zeeone&apikey=Zexxabot">Romantic Text</a>
+         <li class="nav-item"> <a class="nav-link" href="api/photooxy/burn_paper?text=zeeone&apikey=Zexxabot">Burn Paper</a>
+         <li class="nav-item"> <a class="nav-link" href="api/photooxy/shadow_text?text=alpha&apikey=Zexxabot">Shadow</a>
+          </ul>
+          </div>
+          </li>
+          <li class="nav-item menu-items">
+          <a class="nav-link" data-toggle="collapse" href="#ui-search" aria-expanded="false" aria-controls="ui-fun">
+          <span class="menu-icon">
+          <i class="mdi mdi-emoticon-happy"></i>
+          </span>
+          <span class="menu-title">Search API</span>
+          <i class="menu-arrow"></i>
+          </a>
+          <div class="collapse" id="ui-search">
+          <ul class="nav flex-column sub-menu"> 
+          <li class="nav-item"> <a class="nav-link" href="/api/search/wallpaper?query=anime&apikey=Zexxabot">Wallpaper</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/search/stickerpack?query=anime&apikey=Zexxabot">Stickerpack</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/search/xnxx?query=anime&apikey=Zexxabot">XNXX</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/search/xvideos?query=anime&apikey=Zexxabot">XVIDEOS</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/search/sfile?query=anime&apikey=Zexxabot">Sfile Mobi</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/search/lyrics?query=anime&apikey=Zexxabot">Lirik</a></li>            
+          <li class="nav-item"> <a class="nav-link" href="/api/search/gimage?query=anime&apikey=Zexxabot">Google Image</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/search/scsearch?query=anime&apikey=Zexxabot">Soundcloud</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/search/npms?query=anime&apikey=Zexxabot">NPM Search</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/search/phsearch?query=anime&apikey=Zexxabot">Pornhub Search</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/search/otaku?query=naruto&apikey=Zexxabot">Otaku</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/search/anime?query=naruto&jumlah=5&apikey=Zexxabot">Anime</a></li>
+          </ul>
+          </div>
+          </li>    
+<li class="nav-item menu-items">
+          <a class="nav-link" data-toggle="collapse" href="#ui-anime" aria-expanded="false" aria-controls="ui-anime">
+          <span class="menu-icon">
+          <i class="mdi mdi-cat"></i>
+          </span>
+          <span class="menu-title">Anime & Manga API</span>
+          <i class="menu-arrow"></i>
+          </a>
+          <div class="collapse" id="ui-anime">
+          <ul class="nav flex-column sub-menu">
+          <li class="nav-item"> <a class="nav-link" href="api/anime/searchanime?query=naruto&apikey=APIKEY">Search Anime</a></li>          
+            <li class="nav-item"> <a class="nav-link" href="api/anime/manga?query=naruto&apikey=APIKEY">Search Manga</a></li>
+          <li class="nav-item"> <a class="nav-link" href="api/anime/kiryu?query=naruto&apikey=Zexxabot">Search Kiryu</a></li>
+          
+          
+</ul>
+          </div>
+          </li>
+          <li class="nav-item menu-items">
+          <a class="nav-link" data-toggle="collapse" href="#ui-tool" aria-expanded="false" aria-controls="ui-tool">
+          <span class="menu-icon">
+          <i class="mdi mdi-toolbox"></i>
+          </span>
+          <span class="menu-title">Tools API</span>
+          <i class="menu-arrow"></i>
+          </a>
+          <div class="collapse" id="ui-tool">
+          <ul class="nav flex-column sub-menu">
+          <li class="nav-item"> <a class="nav-link" href="api/tool/decode64?query=&apikey=Zexxabot">Decode Base64</a></li>
+          <li class="nav-item"> <a class="nav-link" href="api/tool/encode64?query=&apikey=Zexxabot">Encode Base64</a></li>          
+          <li class="nav-item"> <a class="nav-link" href="api/tool/tinyurl?query=&apikey=Zexxabot">Tinyurl</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/tool/remini?url=&apikey=Zexxabot">Remini</a></li>              <li class="nav-item"> <a class="nav-link" href="/api/tool/nobg?url=&apikey=Zexxabot">Remove Background</a></li>
+</ul> 
+            
+          </div>
+          </li>                    
+<li class="nav-item menu-items">
+          <a class="nav-link" data-toggle="collapse" href="#ui-nsfw" aria-expanded="false" aria-controls="ui-tools">
+          <span class="menu-icon">
+          <i class="mdi mdi-wrench"></i>
+          </span>
+          <span class="menu-title">Nsfw API</span>
+          <i class="menu-arrow"></i>
+          </a>
+          <div class="collapse" id="ui-nsfw">
+          <ul class="nav flex-column sub-menu">
+          <li class="nav-item"> <a class="nav-link" href="api/nsfw/ass?apikey=Zexxabot">Ass</a></li>
+          <li class="nav-item"> <a class="nav-link" href="api/nsfw/ahegao?apikey=Zexxabot">Ahegao</a></li>
+          <li class="nav-item"> <a class="nav-link" href="api/nsfw/bdsm?apikey=Zexxabot">Bdsm</a></li>
+          <li class="nav-item"> <a class="nav-link" href="api/nsfw/blowjob?apikey=Zexxabot">Blowjob</a></li>
+          <li class="nav-item"> <a class="nav-link" href="api/nsfw/cuckold?&apikey=Zexxabot">CuckOld</a></li>
+          <li class="nav-item"> <a class="nav-link" href="api/nsfw/cum?apikey=Zexxabot">Cum</a></li>
+          <li class="nav-item"> <a class="nav-link" href="api/nsfw/ero?apikey=Zexxabot">Ero</a></li>
+          <li class="nav-item"> <a class="nav-link" href="api/nsfw/femdom?apikey=Zexxabot">Femdom</a></li>
+          <li class="nav-item"> <a class="nav-link" href="api/nsfw/foot?apikey=Zexxabot">Foot</a></li>
+          <li class="nav-item"> <a class="nav-link" href="api/nsfw/gangbang?apikey=Zexxabot">Gangbang</a></li>
+          <li class="nav-item"> <a class="nav-link" href="api/nsfw/glasses?&apikey=Zexxabot">Glasses</a></li>
+          <li class="nav-item"> <a class="nav-link" href="api/nsfw/hentai?apikey=Zexxabot">Hentai</a></li>
+           <li class="nav-item"> <a class="nav-link" href="api/nsfw/hentaigif?apikey=Zexxabot">Hantai Gif</a></li>
+          <li class="nav-item"> <a class="nav-link" href="api/nsfw/jahy?apikey=Zexxabot">Jahy</a></li>
+          <li class="nav-item"> <a class="nav-link" href="api/nsfw/masturbation?apikey=Zexxabot">Masturbation</a></li>
+          <li class="nav-item"> <a class="nav-link" href="api/nsfw/neko?apikey=Zexxabot">Neko</a></li>
+          <li class="nav-item"> <a class="nav-link" href="api/nsfw/orgy?&apikey=Zexxabot">Orgy</a></li>
+          <li class="nav-item"> <a class="nav-link" href="api/nsfw/panties?apikey=Zexxabot">Panties</a></li>
+          <li class="nav-item"> <a class="nav-link" href="api/nsfw/pussy?apikey=Zexxabot">Pussy</a></li>
+          <li class="nav-item"> <a class="nav-link" href="api/nsfw/thighs?apikey=Zexxabot">Thighs</a></li>
+          <li class="nav-item"> <a class="nav-link" href="api/nsfw/yuri?&apikey=Zexxabot">Yuri</a></li>          
+          </ul>
+          </div>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" data-toggle="collapse" href="#ui-game" aria-expanded="false" aria-controls="ui-game">
+              <span class="menu-icon">
+                <i class="mdi mdi-gamepad"></i>
+              </span>
+              <span class="menu-title">Games API</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="ui-game">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="api/games/family100?apikey=Zexxabot">Family100</a></li>                
+                <li class="nav-item"> <a class="nav-link" href="api/games/tebakgambar?apikey=Zexxabot">Tebak Gambar</a></li>
+                <li class="nav-item"> <a class="nav-link" href="api/games/lengkapikalimat?apikey=Zexxabot">Lengkapi Kalimat</a></li>
+                <li class="nav-item"> <a class="nav-link" href="api/games/tebaklirik?apikey=Zexxabot">Tebak Lirik</a></li>
+                <li class="nav-item"> <a class="nav-link" href="api/games/tebakgame?apikey=Zexxabot">Tebak Game</a></li>
+                <li class="nav-item"> <a class="nav-link" href="api/games/abcdasar?apikey=Zexxabot">ABC Lima Dasar</a></li>
+                <li class="nav-item"> <a class="nav-link" href="api/games/truth?apikey=Zexxabot">Truth</a></li>                <li class="nav-item"> <a class="nav-link" href="api/games/dare?apikey=Zexxabot">Dare</a></li>
+              </ul>
+            </div>
+          
+          <li class="nav-item menu-items">
+          <a class="nav-link" data-toggle="collapse" href="#ui-islamic" aria-expanded="false" aria-controls="ui-islamic">
+          <span class="menu-icon">
+          <i class="mdi mdi-star"></i>
+          </span>
+          <span class="menu-title">Islamic API</span>
+          <i class="menu-arrow"></i>
+          </a>
+          <div class="collapse" id="ui-islamic">
+          <ul class="nav flex-column sub-menu">
+          <li class="nav-item"> <a class="nav-link"href="api/islam/tahlil?apikey=Zexxabot">Tahlil</a></li>
+            <li class="nav-item"> <a class="nav-link"href="api/islam/kisahnabi?q=adam&apikey=Kira">Kisah Nabi</a></li>
+          <li class="nav-item"> <a class="nav-link"href="api/islam/ayatkursi?apikey=Zexxabot">Ayat Kursi</a></li>
+          <li class="nav-item"> <a class="nav-link"href="api/islam/doaharian?apikey=Zexxabot">Doa Harian</a></li>         
+          <li class="nav-item"> <a class="nav-link"href="api/islam/niatshalat?apikey=Zexxabot">Niat Shalat</a></li>         
+          <li class="nav-item"> <a class="nav-link"href="api/islam/asmaulhusna?apikey=Zexxabot">Asmaul Husna</a></li>         
+ </ul>
+          </div>
+          </li>
+          <li class="nav-item menu-items">
+          <a class="nav-link" data-toggle="collapse" href="#ui-oth" aria-expanded="false" aria-controls="ui-fun">
+          <span class="menu-icon">
+          <i class="mdi mdi-emoticon-happy"></i>
+          </span>
+            
+          <span class="menu-title">Other API</span>
+          <i class="menu-arrow"></i>
+          </a>
+          <div class="collapse" id="ui-oth">
+          <ul class="nav flex-column sub-menu">
+          <li class="nav-item"> <a class="nav-link" href="/api/other/ghstalk?username=ZexxaBot&apikey=Zexxabot">Github Stalk</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/other/repostalk?url=&apikey=Zexxabot">Repositori Stalk</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/other/iplookup?query=&apikey=Zexxabot">Ip Lookup</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/other/hilih?kata=hehe&apikey=Zexxabot">Hilih</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/other/fakeinfo?apikey=Zexxabot">Fake Info</a></li>          
+          <li class="nav-item"> <a class="nav-link" href="/api/other/translate?kata=pagi&apikey=Zexxabot">Translate</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/other/infotsunami?apikey=Zexxabot">Info Tsunami</a></li>         
+          <li class="nav-item"> <a class="nav-link" href="/api/other/cuacabandara?apikey=Zexxabot">Cuaca Bandara</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/other/kodepos?kota=Jakarta&apikey=Zexxabot">Kodepos</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/other/coviddunia?apikey=Zexxabot">Covid Global</a></li>
+                   
+           <li class="nav-item"> <a class="nav-link" href="/api/other/kbbi?kata=bahasa&apikey=Zexxabot">Kbbi</a></li>
+          </ul>
+          </div>
+          </li>    
+          <li class="nav-item nav-category">
+          <span class="nav-link">Contact Me</span>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="https://github.com/Kira-Master">
+              <span class="menu-icon">
+                <i class="mdi mdi-github-circle"></i>
+              </span>
+              <span class="menu-title">Github</span>
+            </a>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="https://wa.me/6282135278036">
+              <span class="menu-icon">
+                <i class="mdi mdi-whatsapp"></i>
+              </span>
+              <span class="menu-title">WhatsApp</span>
+            </a>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="https://facebook.com/fauzixliljee">
+              <span class="menu-icon">
+                <i class="mdi mdi-facebook"></i>
+              </span>
+              <span class="menu-title">Facebook</span>
+            </a>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="https://instagram.com/paujikerenbanget">
+              <span class="menu-icon">
+                <i class="mdi mdi-instagram"></i>
+              </span>
+              <span class="menu-title">Instagram</span>
+            </a>
+          </li>
+        </ul>
+       </font>
+      </nav>
+      <div class="container-fluid page-body-wrapper">
+        <nav class="navbar p-0 fixed-top d-flex flex-row">
+          <div class="navbar-brand-wrapper d-flex d-lg-none align-items-center justify-content-center">
+            <a class="navbar-brand brand-logo-mini" href="index.html"><big><i class="mdi mdi-biohazard text-primary"></i></big></a>
+          </div>
+          <div class="navbar-menu-wrapper flex-grow d-flex align-items-stretch">
+            <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+              <span class="mdi mdi-menu"></span>
+            </button>
+            <ul class="navbar-nav w-100">
+              <li class="nav-item w-100">
+                <form class="nav-link mt-2 mt-md-0 d-none d-lg-flex ">
+                  <input type="text" class="form-control" placeholder="Zexxabot APIs">
+                </form>
+              </li>
+            </ul>
+            <ul class="navbar-nav navbar-nav-right">
+              <li class="nav-item nav-settings d-none d-lg-block">
+                <a class="nav-link" href="#">
+                  <i class="mdi mdi-view-grid"></i>
+                </a>
+              </li>
+              <li class="nav-item dropdown border-left">
+                <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#" data-toggle="dropdown">
+                  <i class="mdi mdi-bell"></i>
+                  <span class="count bg-danger"></span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
+                  <h6 class="p-3 mb-0">Info New Update</h6>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <div class="preview-icon bg-dark rounded-circle">
+                        <i class="mdi mdi-calendar text-success"></i>
+                      </div>
+                    </div>
+                    <div class="preview-item-content">
+                      <p class="preview-subject mb-1">Change Template</p>
+                      <p class="text-muted ellipsis mb-0"> Cuman Minta Template doang bang :v </p>
+                      <p class="preview-subject mb-1">New Feature</p>
+                      <p class="text-muted ellipsis mb-0"> Add more Downloader and Search </p>
+                    </div>
+                  </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link" id="profileDropdown" href="#" data-toggle="dropdown">
+                  <div class="navbar-profile">
+                    <img class="img-xs rounded-circle" src="https://i.pinimg.com/736x/b7/a8/d3/b7a8d37a813394febd86dcaca09a6eeb.jpg" alt="">
+                    <p class="mb-0 d-none d-sm-block navbar-profile-name">Zexxa Dev</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+            <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+              <span class="mdi mdi-format-line-spacing"></span>
+            </button>
+          </div>
+        </nav>
+        <div class="main-panel">
+          <div class="content-wrapper">
+            <div class="row">
+              <div class="col-xl-3 col-sm-6 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="font-weight-bold text-danger text-uppercase">IP Address</h5>
+                    <div class="row">
+                      <div class="col-9">
+                        <div class="d-flex align-items-center align-self-start">
+                          <h3 class="mb-0" id="ip">Waiting...</h3>
+                        </div>
+                      </div>
+                      <div class="col-3">
+                        <div class="icon icon-box-success">
+                          <span class="mdi mdi-access-point-network icon-item"></span>
+                        </div>
+                      </div>
+                    </div>
+                    <font face="Original Surfer" class="text-muted font-weight-normal">Your IP Address</font>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-sm-6 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <h6 class="font-weight-bold text-info text-uppercase">Your Battery</h6>
+                    <div class="row">
+                      <div class="col-9">
+                        <div class="d-flex align-items-center align-self-start">
+                        	<span id="batteryLevel"></span>
+                          <h3 class="mb-0" id="percentageLevel">Waiting...</h3>
+                        </div>
+                      </div>
+                      <div class="col-3">
+                        <div class="icon icon-box-success ">
+                          <span class="mdi mdi-battery-positive"></span>
+                        </div>
+                      </div>
+                    </div>
+                    <font face="Original Surfer" class="text-muted font-weight-normal">Percentase Your Battery</font>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-sm-6 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="font-weight-bold text-success text-uppercase">Visitor</h5>
+                    <div class="row">
+                      <div class="col-9">
+                        <div class="d-flex align-items-center align-self-start">
+                          <h3 class="mb-0" id="visits">1924</h3>
+                        </div>
+                      </div>
+                      <div class="col-3">
+                        <div class="icon icon-box-success ">
+                          <span class="mdi mdi-eye icon-item"></span>
+                        </div>
+                      </div>
+                    </div>
+                    <font face="Original Surfer" class="text-muted font-weight-normal">Visit Web</font>
+                  </div>
+                </div>
+              </div>
+            <div class="col-xl-3 col-sm-6 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="font-weight-bold text-info text-uppercase">Date</h5>
+                    <div class="row">
+                      <div class="col-9">
+                        <div class="d-flex align-items-center align-self-start">
+                          <h4 class="mb-0" id="tanggal">Waiting...</h4>
+                        </div>
+                      </div>
+                      <div class="col-3">
+                        <div class="icon icon-box-success ">
+                          <span class="mdi mdi-calendar icon-item"></span>
+                        </div>
+                      </div>
+                    </div>
+                    <font face="Original Surfer" class="text-muted font-weight-normal">Date Now</font>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-sm-6 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="font-weight-bold text-success text-uppercase">Clock</h5>
+                    <div class="row">
+                      <div class="col-9">
+                        <div class="d-flex align-items-center align-self-start">
+                          <h4 class="mb-0" id="Clock">Waiting...</h4>
+                        </div>
+                      </div>
+                      <div class="col-3">
+                        <div class="icon icon-box-success ">
+                          <span class="mdi mdi-clock icon-item"></span>
+                        </div>
+                      </div>
+                    </div>
+                    <font face="Original Surfer" class="text-muted font-weight-normal" id="Ucapan">Ucapan</font>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-sm-6 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <h6 class="font-weight-bold text-info text-uppercase">Road To My Birthday</h6>
+                    <div class="row">
+                      <div class="col-9">
+                        <div class="d-flex align-items-center align-self-start">
+                  <h5 class="mb-0" id="IdulAdha">Waiting...</h5>
+                        </div>
+                      </div>
+                      <div class="col-3">
+                        <div class="icon icon-box-success ">
+                          <span class="mdi mdi-star icon-item"></span>
+                        </div>
+                      </div>
+                    </div>
+                    <font face="Original Surfer" class="text-muted font-weight-normal">Menuju Ulang Tahun Owner</font>
+                  </div>
+                </div>
+              </div>
+            </div>
+<ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-gw-3+1f-3d+2z" data-ad-client="ca-pub-5404310597803049" data-ad-slot="6657550061"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+            <div class="row">
+              <div class="col-md-6 col-xl-4 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="mt-3 btn btn-outline-danger bg-transparent">
+                    <div id="demo" class="alert btn btn-outline-danger" role="alert">
+                      <span id="Statistic">Waiting...</span>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12 grid-margin stretch-card">
+              <div class="card">
+              <div class="card-body">
+              <img src="https://media.tenor.com/H37ktE73aVkAAAAC/loufy42-light.gif" alt="Ojan Ganz" class="logo img-fluid rounded mx-auto d-block mb-4"/>
+              <h6 class="m-0 font-weight-bold text-primary">Information</h6>
+              <h6><br>
+              Rest Api Ini Free, Silahakan di pake dengan bijak. <br><br>Apikey Nya? <font color="red">Zexxabot</font>
+              <br> Jika menemukan bug lapor <a href="https://wa.me/6282135278036"> Owner</a></font>
+              </div>
+              
+                </div>
+              </div>
+            </div>
+          </div>
+          <footer class="footer">
+            <div class="d-sm-flex justify-content-center justify-content-sm-between">
+              <div class="bg-dark btn btn-block btn-outline-danger">
+                <font face="Original Surfer" class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © <span id="Years">00</span> Zexxa Dev</font>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+    <script>
+      swal({
+        title: 'Welcome To Rest Api Zexxabot',
+        text: 'Klo ada error langsung lapor owner',
+        imageUrl: 'https://media.tenor.com/KY_iCm1JYzsAAAAC/kira-death-note.gif',
+        imageWidth: 400,
+        imageHeight: 200,
+        imageAlt: 'Danu',
+        animation: true
+      })
+    </script>
+			<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>   
+    <script src="vendors/js/vendor.bundle.base.js"></script>
+    <script src="vendors/owl-carousel-2/owl.carousel.min.js"></script>
+    <script src="js/off-canvas.js"></script>
+    <script src="js/hoverable-collapse.js"></script>
+    <script src="js/misc.js"></script>
+    <script src="js/settings.js"></script>
+    <script src="js/todolist.js"></script>
+    <script src="js/dashboard.js"></script>
+    <script src="js/ojan.js"></script>
+  </html>
